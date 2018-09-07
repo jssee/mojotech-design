@@ -3,16 +3,15 @@
     margin-bottom: var(--space-xl);
   }
   & .links {
-    display: flex;
-    flex-direction: column;
     @media (--screen-m) {
+      display: flex;
       flex-direction: row;
     }
     & a:not(:last-child) {
       margin-bottom: var(--space-s);
+      margin-right: var(--space-l);
       @media (--screen-m) {
         margin-bottom: 0;
-        margin-right: var(--space-l);
       }
     }
   }

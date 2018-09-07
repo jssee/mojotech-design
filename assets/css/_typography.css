@@ -58,14 +58,24 @@ h3,
   margin-bottom: calc(2 / 3 * 1em);
 }
 
-small {
+.caption {
   color: rgba(255, 255, 255, 0.5);
   font-size: inherit;
 }
 
 figcaption {
-  line-height: 1.4;
-  font-size: 24px;
+  --fz-min: 16;
+  --fz-max: 24;
+  font-size: calc(
+    (var(--fz-min) * 1px) + (var(--fz-max) - var(--fz-min)) *
+      ((100vw - 600px) / (1800 - 600))
+  );
+  font-family: var(--gt-america);
+  line-height: 1.5;
+  margin-bottom: 2em;
+  @media (--screen-xl) {
+    font-size: 24px;
+  }
 }
 
 .sub-text {

@@ -1,0 +1,25 @@
+.fade-in {
+  opacity: 0.01;
+  transform: translateY(20px);
+  transition: transform 300ms var(--ease-out), opacity 300ms var(--ease-out);
+  &.an-alpha {
+    transition-delay: 150ms;
+  }
+  &.an-beta {
+    transition-delay: 250ms;
+  }
+  &.an-gamma {
+    transition-delay: 300ms;
+  }
+  &.an-delta {
+    transition-delay: 350ms;
+  }
+  &.an-epsilon {
+    transition-delay: 400ms;
+  }
+}
+
+.fade-in.in-view {
+  opacity: 0.99;
+  transform: translateY(0);
+}
