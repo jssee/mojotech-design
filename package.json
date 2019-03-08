@@ -1,43 +1,17 @@
 {
-  "name": "mojotech-design",
-  "description": "MojoTech Design",
-  "version": "0.0.1",
-  "author": "jssee",
-  "ava": {
-    "verbose": "true"
-  },
-  "bugs": "https://github.com/jssee/mojotech-design/issues",
-  "dependencies": {
-    "basicscroll": "^2.1.1",
-    "intersection-observer": "^0.5.0",
-    "lazysizes": "^4.1.2",
-    "minireset.css": "^0.0.3",
-    "popmotion": "^8.3.6",
-    "reshape-standard": "^3.3.0",
-    "scrollama": "^1.4.3",
-    "spike": "^2.3.0",
-    "spike-css-standards": "^4.0.0",
-    "spike-js-standards": "^2.1.0",
-    "spike-optimize": "^0.1.2",
-    "spike-page-id": "^1.1.0"
-  },
-  "devDependencies": {
-    "ava": "^0.19.1",
-    "rimraf": "^2.6.1",
-    "snazzy": "^7.0.0",
-    "standard": "^10.0.2"
-  },
-  "homepage": "https://github.com/jssee/mojotech-design",
-  "main": "app.js",
-  "private": true,
-  "repository": "https://github.com/jssee/mojotech-design",
   "scripts": {
-    "lint": "standard | snazzy",
-    "precommit": "npm run lint -s",
-    "pretest": "npm run lint -s",
-    "test": "NODE_ENV=test ava",
-    "start": "spike watch",
-    "build": "spike compile",
-    "prod": "NODE_ENV=production spike compile -e production"
+    "build": "next build",
+    "start": "next",
+    "now-build": "next build"
+  },
+  "dependencies": {
+    "@emotion/babel-preset-css-prop": "^10.0.7",
+    "@emotion/core": "^10.0.7",
+    "babel-plugin-emotion": "^10.0.7",
+    "eslint-config-healthier": "^2.0.0",
+    "facepaint": "^1.2.1",
+    "next": "^8.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }
